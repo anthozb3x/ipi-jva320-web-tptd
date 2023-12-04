@@ -18,6 +18,7 @@ public class LinkedHashSetStringConverter implements AttributeConverter<LinkedHa
     public String convertToDatabaseColumn(LinkedHashSet<LocalDate> localDates) {
         return localDates == null ? null
             : localDates.stream().map(d -> d.toString()).collect(Collectors.joining(DELIMITER));
+
     }
 
     @Override
