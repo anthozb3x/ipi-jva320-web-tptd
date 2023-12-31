@@ -16,4 +16,6 @@ public class HomeController {
         model.put("title","Bienvenue dans l'interface d'administration RH ! "+nbSalarie);
         return "home";
     }
+
+
 }
